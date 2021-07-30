@@ -1,2 +1,2 @@
-# my_pojects_portfolio
+# projects_portfolio
 Edgardo Pina's projects portfolio
