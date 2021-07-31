@@ -3,15 +3,16 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+      <link rel="stylesheet" href="./assets/css/style.css" />
       <title>Portfolio</title>
    </head>
-   <main>
+   <body>
       <!-- navigation tags - block level element -->
       <header>
          <h1>
             <a href="/">Edgardo Pina</a>
          </h1>
+
          <nav>
             <ul>
                <li>
@@ -33,37 +34,50 @@
 
       <!-- hero/jumbotron -->
       <section class="hero">
-         <div class="hero-cta">
-            <h2>Ready to hire!</h2>
+         <div>
+            <p>Ready to hire!</p>
          </div>
       </section>
       <!-- end hero -->
 
       <!-- "About Me - <section> -->
       <section id="about-me">
-         <article>
-            <h3>About Me</h3>
-            <p>
-               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ducimus vitae dolor fugiat ullam nesciunt
-               commodi ipsam architecto repellendus ex harum eaque error laboriosam exercitationem accusamus ut, quos
-               laborum omnis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis inventore, quasi labore
-               neque ut nobis perferendis consequuntur praesentium mollitia adipisci culpa nemo recusandae assumenda
-               corrupti vitae quis ex, voluptatem nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Pariatur vel expedita minus tempora quaerat soluta hic fugiat accusamus beatae, corrupti quia mollitia
-               facilis, nihil enim aliquid ipsum quisquam modi molestiae?
-            </p>
+         <article class="about-me">
+            <div class="section-title">
+               <h3>About Me</h3>
+            </div>
+            <div>
+               <img src="./assets/images/istockphoto-1140147076-1024x1024 - Copy.jpg" alt="" />
+            </div>
+            <div class="about">
+               <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro ducimus vitae dolor fugiat ullam
+                  nesciunt commodi ipsam architecto repellendus ex harum eaque error laboriosam exercitationem accusamus
+                  ut, quos laborum omnis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis inventore,
+                  quasi labore neque ut nobis perferendis consequuntur praesentium mollitia adipisci culpa nemo
+                  recusandae assumenda corrupti vitae quis ex, voluptatem nulla.
+               </p>
+               <br />
+               <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur vel expedita minus tempora quaerat
+                  soluta hic fugiat accusamus beatae, corrupti quia mollitia facilis, nihil enim aliquid ipsum quisquam
+                  modi molestiae? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi ratione dolore impedit.
+                  Velit cupiditate quidem quibusdam nam autem. Velit maiores dolores illo ullam quia repellendus sit
+                  nemo eum ratione expedita.
+               </p>
+            </div>
          </article>
       </section>
       <!-- end "About Me" -->
 
       <!-- "Work" start -->
-      <section id="work">
-         <header>
+      <section id="work" class="work">
+         <div class="section-title">
             <h3>Work</h3>
-         </header>
+         </div>
          <article>
             <div>
-               <div>
+               <div class="first">
                   <img src="./assets/images/istockphoto-1140147076-1024x1024.jpg" alt="" />
                </div>
                <div>
@@ -114,32 +128,6 @@
       </section>
       <!-- "Work" end -->
 
-      <!-- "Resume" start -->
-      <section id="resume">
-         <header>
-            <h3>Jose Edgardo Pina Resume</h3>
-         </header>
-         <article>
-            <div>
-               <h4>Skills</h4>
-               <ul>
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>Responsive Web Design</li>
-               </ul>
-            </div>
-            <div>
-               <h4>Professional Experience</h4>
-               <ul>
-                  <li>Pearson VUE, Project Management Manager 2013-Current</li>
-                  <li>Infor Global Solutions, Senior Account Manager 2009-2013</li>
-                  <li>Pearson Education, Director of Information Technology 1994-2004</li>
-               </ul>
-            </div>
-         </article>
-      </section>
-      <!-- "Resume" end -->
-
       <!-- footer -->
       <footer id="contact-me">
          <h3>Contact Me</h3>
@@ -154,5 +142,5 @@
          </nav>
       </footer>
       <!-- footer end -->
-   </main>
+   </body>
 </html>
