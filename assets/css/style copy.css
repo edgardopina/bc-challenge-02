@@ -1,0 +1,179 @@
+:root {
+     --primary-color: #596884;
+     --secondary-color: #31343d;
+     --tertiary-color: #91cbcd;
+     --color-04: #25252e;
+}
+
+/* box-sizing: border-box - padding and border are included in the width and height */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     color: var(--secondary-color);
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+/* HEADER / NAV BAR STYLES START */
+
+header {
+     padding: 20px 35px;
+     background-color: var(--secondary-color);
+     display: flex;
+     justify-content: space-between;
+     align-self: baseline;
+     flex-wrap: wrap;
+     /* position: sticky;
+   position: -webkit-sticky;
+   top: 0; */
+     background-size: cover;
+     background-attachment: fixed;
+     background-position: 80%;
+     z-index: 9999;
+}
+
+header a {
+     text-decoration-line: underline;
+     /* text-decoration-thickness: var(--tertiary-color); */
+     color: var(--tertiary-color);
+}
+
+header h1 a {
+     text-decoration: none;
+     padding: 0.1em 0.2em 0.1em 0.2em;
+     font-weight: bold;
+     margin: 0;
+     font-size: 36px;
+     background-color: var(--tertiary-color);
+     color: var(--color-04);
+     background-clip: 40px;
+}
+
+header nav {
+     margin: 7px 0;
+}
+
+header nav ul {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     list-style: none;
+}
+
+header nav ul li a {
+     padding: 10px 15px;
+     font-weight: lighter;
+     font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+     background: var(--primary-color);
+     color: var(--secondary-color);
+     border-radius: 15px;
+     text-shadow: none;
+}
+
+/* HEADER / NAVBAR STYLES END */
+
+/* FOOTER STYLES START */
+footer {
+     background: var(--primary-color);
+     padding: 40px 35px;
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     width: 100%;
+}
+
+footer h2 {
+     color: var(--secondary-color);
+     font-size: 30px;
+     margin: 0;
+}
+
+footer div {
+     line-height: 1.5;
+     text-align: right;
+}
+
+footer a {
+     color: var(--secondary-color);
+}
+/* END FOOTER STYLES */
+
+/* STYLE ALL SECTION TAGS */
+section {
+     padding: 60px;
+}
+
+/* HERO STYLES START */
+.hero {
+     background-image: url("../images/glitter-vintage-lights-background-gold-600w-226746934.webp");
+     background-size: cover;
+     display: flex;
+     justify-content: flex-end;
+     /* flex-wrap: wrap; */
+     align-items: flex-end;
+     background-attachment: fixed;
+     /* background-position: 80%; */
+}
+
+.hero p {
+     background-color: var(--tertiary-color);
+     color: var(--color-04);
+     font-weight: bold;
+     padding: 0.1em 0.2em 0.1em 0.2em;
+     align-self: flex-end;
+}
+/* HERO STYLES END */
+
+.about-me {
+     width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-content: flex-start;
+}
+
+.about-me .section-title {
+     padding-right: 8px;
+     border-right: 3px solid;
+     border-color: var(--primary-color);
+     width: 15%;
+     color: var(--primary-color);
+     font-size: 150%;
+}
+
+.about-details {
+     line-height: 1.7;
+     display: flex;
+     width: 80%;
+     flex-wrap: initial;
+}
+.about-details img {
+     width: 20%;
+}
+.about-details p {
+     width: 80%;
+}
+
+.about img {
+     width: 100%;
+     height: auto;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+}
