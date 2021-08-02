@@ -1,3 +1,5 @@
+/* MEDIA QUERY FOR NORMAL DESKTOP SCREENS AND LARGER */
+
 :root {
      --primary-color: #596884;
      --secondary-color: #31343d;
@@ -103,7 +105,7 @@ header nav ul li a:hover,
 
 .hero img {
      max-width: 60px;
-     vertical-align: middle;
+     /* vertical-align: middle; */
      text-align: center;
      border-radius: 5px;
      padding: 0 10px;
@@ -143,7 +145,7 @@ header nav ul li a:hover,
      font-size: 100%;
      margin: 5px auto;
      width: 80%;
-     padding: 15px;
+     padding: 60px;
      text-align: left;
 }
 
@@ -239,16 +241,7 @@ header nav ul li a:hover,
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (min-width: 1220) {
-     .container .item1 {
-          flex-wrap: nowrap;
-          width: 20%;
-     }
-}
 @media screen and (max-width: 980px) {
-     .container {
-          flex-wrap: wrap;
-     }
 }
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
@@ -256,44 +249,30 @@ header nav ul li a:hover,
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
      header {
-          width: auto;
-          display: flex;
-          justify-content: center;
-          /* flex-wrap: wrap;*/
+          padding: 0;
+          flex-direction: column;
+          z-index: 9999;
      }
-     header h1 {
-          /* padding: 0 208px; */
-          font-style: italic;
-          font-size: 35px;
 
-          width: auto;
-     }
-     header h1 a {
-          flex-wrap: nowrap;
+     header h1 {
+          font-size: 30px;
+          text-align: center;
      }
 
      header img {
-          max-width: 60px;
-     }
-
-     header nav,
-     .itenm2 {
-          margin: 10px 0 0 0px;
+          max-width: 45px;
      }
 
      header nav ul,
      .item2 ul {
-          display: flex;
-          flex-wrap: wrap;
           justify-content: space-around;
-          align-items: center;
-          list-style: none;
      }
 
      header nav ul li a,
      .item2 ul li a {
-          font-size: 1.6em;
+          font-size: 1.1em;
      }
+
      /* HEADER / NAVBAR STYLES END */
 
      .hero-cta h2 {
@@ -304,104 +283,26 @@ header nav ul li a:hover,
 
      /* WHAT YOU DO STYLES START */
      .container {
-          padding-top: 40px;
-          display: flex;
           flex-direction: column;
-          justify-content: flex-start;
           align-items: center;
-          flex-wrap: wrap;
-          color: var(--primary-color);
      }
 
      .container .item1 {
-          font-size: 250%;
-          padding: 0 15px 1px 0;
-          text-align: center;
+          font-size: 200%;
           width: auto;
      }
 
      .container .item2 {
           line-height: 1.6;
+          padding: 10px;
      }
 
+     .container .item2 .footer-items {
+          line-height: 3;
+          flex-direction: column;
+          font-size: larger;
+     }
      .app-leg {
-          font-size: 0.6em;
+          font-size: 0.7em;
      }
-
-     /* .container nav {
-          border: none;
-     }
-
-     .container2 {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
-          flex-wrap: wrap;
-          position: relative;
-     }
-
-     .app-01 {
-          background-image: url("../images/forex.jpg");
-          width: 98%;
-          height: 200px;
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          border: 3px solid var(--primary-color);
-          padding: 80px 15px;
-          margin: 5px auto;
-
-          position: relative;
-     }
-     .app-02 {
-          background-image: url("../images/gifts-web-store.jpg");
-          width: 48%;
-          height: 200px;
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          border: 3px solid var(--primary-color);
-          padding: 80px 15px;
-          margin: 5px auto;
-          position: relative;
-     }
-     .app-03 {
-          background-image: url("../images/news.jpg");
-          width: 48%;
-          height: 200px;
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          border: 3px solid var(--primary-color);
-          padding: 80px 15px;
-          margin: 5px auto;
-          position: relative;
-     }
-     .app-04 {
-          background-image: url("../images/mlm.jpg");
-          width: 48%;
-          height: 200px;
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          border: 3px solid var(--primary-color);
-          padding: 80px 15px;
-          margin: 5px auto;
-          position: relative;
-     }
-     .app-05 {
-          background-image: url("../images/real-estate.jpg");
-          width: 48%;
-          height: 200px;
-          background-size: cover;
-          background-position: center;
-          background-attachment: fixed;
-          border: 3px solid var(--primary-color);
-          padding: 80px 15px;
-          margin: 5px auto;
-
-          position: relative;
-     }
-
- */
 }
