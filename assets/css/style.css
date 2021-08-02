@@ -314,22 +314,21 @@ header nav ul li a:hover,
      }
 
      .container .item1 {
-          font-size: 200%;
+          font-size: 250%;
           padding: 0 15px 1px 0;
-          text-align: right;
-          /* width: 20%; */
+          text-align: center;
+          width: auto;
      }
 
      .container .item2 {
-          border-left: 3px solid;
-          font-size: 1em;
-          margin: 5px auto;
-          /* width: 80%; */
-          padding: 15px;
-          text-align: left;
+          line-height: 1.6;
      }
 
-     .container nav {
+     .app-leg {
+          font-size: 0.6em;
+     }
+
+     /* .container nav {
           border: none;
      }
 
@@ -404,19 +403,5 @@ header nav ul li a:hover,
           position: relative;
      }
 
-     .app-leg {
-          background-color: var(--tertiary-color);
-          width: fit-content;
-          padding: 5px 10px;
-          text-align: center;
-          border-radius: 5px;
-
-          position: absolute;
-          bottom: 30px;
-          left: 0px;
-     }
-
-     .app-leg h4 {
-          color: var(--color-04);
-     }
+ */
 }
