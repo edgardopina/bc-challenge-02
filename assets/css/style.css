@@ -24,6 +24,8 @@ body {
 header {
      padding: 10px 35px 10px 5px;
      background-color: var(--secondary-color);
+position: sticky;
+top: 0px;
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
