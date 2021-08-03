@@ -170,17 +170,29 @@ header nav ul li a:hover,
 }
 
 .app-01 {
-     background-image: url("../images/run-buddy.jpg");
      width: 98%;
      height: 200px;
+     background-image: url("../images/run-buddy.jpg");
      background-size: cover;
-     background-position: center;
-     background-attachment: fixed;
+     background-position: right 100% bottom 100%;
+     background-attachment: scroll;
      border: 3px solid var(--primary-color);
      padding: 80px 15px;
      margin: 5px auto;
      position: relative;
 }
+
+.app-01 .link-01{
+     background-image: url("../images/run-buddy.jpg");
+     background-size: cover;
+     background-position: right 100% bottom 100%;
+     background-attachment: scroll;
+     border: 3px solid var(--primary-color);
+     padding: 80px 15px;
+     margin: 5px auto;
+     position: relative;
+}
+
 
 .item2 .app-02,
 .item2 .app-03,
@@ -189,8 +201,8 @@ header nav ul li a:hover,
      width: 48%;
      height: 200px;
      background-size: cover;
-     background-position: center;
-     background-attachment: fixed;
+     background-position: right 100% bottom 100%;
+     background-attachment: scroll;
      border: 3px solid var(--primary-color);
      padding: 80px 15px;
      margin: 5px auto;
