@@ -1,5 +1,4 @@
-/* MEDIA QUERY FOR NORMAL DESKTOP SCREENS AND LARGER */
-
+/* global CSS variables definition */
 :root {
      --primary-color: #596884;
      --secondary-color: #31343d;
@@ -8,6 +7,7 @@
      --color-05: #0a0a8d;
 }
 
+/* global seetings for all elements */
 * {
      box-sizing: border-box;
      margin: 0;
@@ -20,7 +20,6 @@ body {
 }
 
 /* HEADER / NAV BAR STYLES START */
-
 header {
      padding: 10px 35px 10px 5px;
      background-color: var(--secondary-color);
@@ -94,6 +93,7 @@ header nav ul li a:hover,
 /* HEADER / NAVBAR STYLES END */
 
 /* HERO STYLES START */
+
 .hero {
      padding: 50px 30px 20px 0px;
      background-image: url("../images/glitter-lights.webp");
@@ -125,7 +125,8 @@ header nav ul li a:hover,
 
 /* HERO STYLES END */
 
-/* WHAT YOU DO STYLES START */
+/* ABOUT ME - WORK - CONTACT ME STYLES START */
+
 .container {
      padding-top: 40px;
      display: flex;
@@ -147,8 +148,13 @@ header nav ul li a:hover,
      font-size: 100%;
      margin: 5px auto;
      width: 80%;
-     padding: 60px;
+     padding: 10px;
      text-align: left;
+}
+
+
+.container .item2 .footer-items {
+     padding: 60px;
 }
 
 .container nav {
@@ -164,7 +170,7 @@ header nav ul li a:hover,
 }
 
 .app-01 {
-     background-image: url("../images/forex.jpg");
+     background-image: url("../images/run-buddy.jpg");
      width: 98%;
      height: 200px;
      background-size: cover;
@@ -173,11 +179,13 @@ header nav ul li a:hover,
      border: 3px solid var(--primary-color);
      padding: 80px 15px;
      margin: 5px auto;
-
      position: relative;
 }
-.app-02 {
-     background-image: url("../images/gifts-web-store.jpg");
+
+.item2 .app-02,
+.item2 .app-03,
+.item2 .app-04,
+.item2 .app-05 {
      width: 48%;
      height: 200px;
      background-size: cover;
@@ -186,47 +194,24 @@ header nav ul li a:hover,
      border: 3px solid var(--primary-color);
      padding: 80px 15px;
      margin: 5px auto;
+
      position: relative;
+}
+
+.app-02 {
+     background-image: url("../images/gifts-web-store.jpg");
 }
 .app-03 {
      background-image: url("../images/news.jpg");
-     width: 48%;
-     height: 200px;
-     background-size: cover;
-     background-position: center;
-     background-attachment: fixed;
-     border: 3px solid var(--primary-color);
-     padding: 80px 15px;
-     margin: 5px auto;
-     position: relative;
 }
 .app-04 {
      background-image: url("../images/mlm.jpg");
-     width: 48%;
-     height: 200px;
-     background-size: cover;
-     background-position: center;
-     background-attachment: fixed;
-     border: 3px solid var(--primary-color);
-     padding: 80px 15px;
-     margin: 5px auto;
-     position: relative;
 }
 .app-05 {
      background-image: url("../images/real-estate.jpg");
-     width: 48%;
-     height: 200px;
-     background-size: cover;
-     background-position: center;
-     background-attachment: fixed;
-     border: 3px solid var(--primary-color);
-     padding: 80px 15px;
-     margin: 5px auto;
-
-     position: relative;
 }
 
-.app-leg {
+.app-legend {
      background-color: var(--tertiary-color);
      width: fit-content;
      padding: 5px 10px;
@@ -238,67 +223,86 @@ header nav ul li a:hover,
      left: 0px;
 }
 
-.app-leg h4 {
+.app-legend h4 {
      color: var(--color-04);
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* ABOUT ME - WORK - CONTACT ME STYLES END */
+
+/* MEDIA QUERY FOR NORMAL DESKTOP SCREENS AND LARGER */
+
 @media screen and (max-width: 980px) {
+     /* ABOUT ME - WORK - CONTACT ME STYLES START */
+     .container .item1 {
+          font-size: 160%;
+     }
+
+     .container .item2 .footer-items {
+          line-height: 1.8;
+          flex-direction: column;
+          font-size:medium;
+          padding: 0;
+     /* ABOUT ME - WORK - CONTACT ME STYLES END */
 }
+
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+     .container .item1 {
+          font-size: 130%;
+     }
+
+     .container .item2 .footer-items {
+          line-height: 1.8;
+          flex-direction: column;
+          font-size: large;
+          padding: 0;
+     }
 }
+
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+     /* HEADER / NAVBAR STYLES START  */
      header {
           padding: 0;
           flex-direction: column;
           z-index: 9999;
      }
-
      header h1 {
           font-size: 30px;
           text-align: center;
      }
-
      header img {
           max-width: 45px;
      }
-
      header nav ul,
      .item2 ul {
           justify-content: space-around;
      }
-
      header nav ul li a,
      .item2 ul li a {
           font-size: 1.1em;
      }
-
      /* HEADER / NAVBAR STYLES END */
 
+     /* HERO STYLES START */
      .hero-cta h2 {
           font-size: 1.1em;
      }
-
      /* HERO STYLES END */
 
-     /* WHAT YOU DO STYLES START */
+     /* MAIN SECTIONS STYLES START */
      .container {
           flex-direction: column;
           align-items: center;
      }
-
      .container .item1 {
           font-size: 200%;
           width: auto;
      }
-
      .container .item2 {
           line-height: 1.6;
           padding: 10px;
      }
-
      .container .item2 .footer-items {
           line-height: 3;
           flex-direction: column;
@@ -307,4 +311,5 @@ header nav ul li a:hover,
      .app-leg {
           font-size: 0.7em;
      }
+     /* MAIN SECTIONS STYLES END */
 }
