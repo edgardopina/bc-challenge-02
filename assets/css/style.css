@@ -169,9 +169,11 @@ header nav ul li a:hover,
      position: relative;
 }
 
-.app-01 {
+.app-01 a {
      width: 98%;
      height: 200px;
+     display:block;
+     
      background-image: url("../images/run-buddy.jpg");
      background-size: cover;
      background-position: right 100% bottom 100%;
@@ -179,27 +181,15 @@ header nav ul li a:hover,
      border: 3px solid var(--primary-color);
      padding: 80px 15px;
      margin: 5px auto;
+
      position: relative;
 }
-
-.app-01 .link-01{
-     background-image: url("../images/run-buddy.jpg");
-     background-size: cover;
-     background-position: right 100% bottom 100%;
-     background-attachment: scroll;
-     border: 3px solid var(--primary-color);
-     padding: 80px 15px;
-     margin: 5px auto;
-     position: relative;
-}
-
-
-.item2 .app-02,
-.item2 .app-03,
-.item2 .app-04,
-.item2 .app-05 {
+.app-02 {
      width: 48%;
      height: 200px;
+     display:block;
+     
+     background-image: url("../images/gifts-web-store.jpg");
      background-size: cover;
      background-position: right 100% bottom 100%;
      background-attachment: scroll;
@@ -210,10 +200,57 @@ header nav ul li a:hover,
      position: relative;
 }
 
-.app-02 {
-     background-image: url("../images/gifts-web-store.jpg");
+.app-03  {
+     width: 48%;
+     height: 200px;
+     display:block;
+     
+     background-image: url("../images/news.jpg");
+     background-size: cover;
+     background-position: right 100% bottom 100%;
+     background-attachment: scroll;
+     border: 3px solid var(--primary-color);
+     padding: 80px 15px;
+     margin: 5px auto;
+
+     position: relative;
 }
-.app-03 {
+.app-04  {
+     width: 48%;
+     height: 200px;
+     display:block;
+     
+     background-image: url("../images/mlm.jpg");
+     background-size: cover;
+     background-position: right 100% bottom 100%;
+     background-attachment: scroll;
+     border: 3px solid var(--primary-color);
+     padding: 80px 15px;
+     margin: 5px auto;
+
+     position: relative;
+}
+.app-05  {
+     width: 48%;
+     height: 200px;
+     display:block;
+     
+     background-image: url("../images/real-estate.jpg");
+     background-size: cover;
+     background-position: right 100% bottom 100%;
+     background-attachment: scroll;
+     border: 3px solid var(--primary-color);
+     padding: 80px 15px;
+     margin: 5px auto;
+
+     position: relative;
+}
+
+
+/* .app-02 {
+     background-image: url("../images/gifts-web-store.jpg");
+} */
+/* .app-03 {
      background-image: url("../images/news.jpg");
 }
 .app-04 {
@@ -221,7 +258,7 @@ header nav ul li a:hover,
 }
 .app-05 {
      background-image: url("../images/real-estate.jpg");
-}
+} */
 
 .app-legend {
      background-color: var(--tertiary-color);
@@ -234,9 +271,20 @@ header nav ul li a:hover,
      bottom: 30px;
      left: 0px;
 }
+a .applegend{
+     background-color: var(--tertiary-color);
+     width: fit-content;
+     padding: 5px 10px;
+     text-align: center;
+     border-radius: 5px;
+
+     position: absolute;
+     bottom: 30px;
+     left: 0px;
+}
 
 .app-legend h4 {
-     color: var(--color-04);
+     color: var(--primary-color);
 }
 
 /* ABOUT ME - WORK - CONTACT ME STYLES END */
